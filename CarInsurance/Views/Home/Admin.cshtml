@@ -1,0 +1,31 @@
+﻿@using CarInsurance.Models
+@model List<InsuranceSignUp>
+
+<div class="row no-gutters">
+    <div class="card mx-auto shadow">
+        <div class="card-header text-center">
+            <h5 class="m-0">Quotes</h5>
+        </div>
+        <div class="card-body">
+            @foreach (var signup in Model)
+            {
+                <div class="row">
+                    <div class="col-1">
+                      First Name: @signup.FirstName
+                    </div>
+                    <div class="col-1">
+                      Last Name: @signup.LastName
+                    </div>
+                    <div class="col-2">
+                      Email Address: @signup.EmailAddress
+                    </div>
+                    <div class="col-1">
+                      Total: $@signup.Total a month
+                    </div>
+                    <br />
+                </div>
+            }
+        </div>
+    </div>
+</div>
+

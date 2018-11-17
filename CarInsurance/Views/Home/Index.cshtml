@@ -1,0 +1,64 @@
+﻿<div class="row no-gutters m-3">
+    <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
+        <div class="card-header text-center">
+            <h5 class="m-0">Auto Insurance Quote</h5>
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("SignUp", "Home", FormMethod.Post))
+            {
+                <div class="row no-gutters">
+                    
+                    <div class="form-group col-md-6">
+                        <h6>First Name:</h6>
+                        <input name="FirstName" type="text" class="form-control" placeholder="First Name" />
+                    </div>
+                    <div class="form-group col-md-6">
+                        <h6>Last Name:</h6>
+                        <input name="LastName" type="text" class="form-control" placeholder="Last Name" />
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                        <h6>Email Address:</h6>
+                        <input name="EmailAddress" type="email" class="form-control" placeholder="Email Address" />
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                        <h6>Date of Birth:</h6>
+                        <input name="DateofBirth" type="date" class="form-control" placeholder="Date of Birth" />
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                        <h6>Year of Car:</h6>
+                        <input name="CarYear" type="number" class="form-control" placeholder="Car Year" />
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                        <h6>Car Make:</h6>
+                        <input name="CarMake" type="text" class="form-control" placeholder="Car Make" />
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                        <h6>Car Model:</h6>
+                        <input name="CarModel" type="text" class="form-control" placeholder="Car Model" />
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                        <h6>Have you ever had a DUI?</h6>
+                        <input name="Dui" type="text" class="form-control" placeholder="Yes or No" />
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                        <h6>How many tickets are on your record?</h6>
+                        <input name="Tickets" type="number" class="form-control" placeholder="Total Tickets" />
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                        <h6>Do you want full coverage or liability?</h6>
+                        <input name="Coverage" type="text" class="form-control" placeholder="Full or Liability" />
+                    </div>
+                    <button type="submit" class="btn btn-block btn-primary">Submit</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
